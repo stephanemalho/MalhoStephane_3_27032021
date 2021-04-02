@@ -29,31 +29,22 @@
     <!-- add this font on css font-family: 'Shrikhand', cursive,'Roboto', sans-serif; -->
     <!--HEADER-->
     <!--HEADER-->
-    <header>
-      <h1><a href="#goToFoot" id="goToTitle">ohmyfood</a></h1>
-      <!--TO GO TO FOOTER INFO-->
-      <div class="datalist-holder">
-        <i class="fa-map-marker-alt fas"></i>
-        <select size="1" name="district">
-          <!-- TO SELECT district in Paris-->
-          <option>Paris, Belleville</option>
-          <option>Paris, Nation</option>
-          <option>Paris, Buttes Chaumont</option>
-          <option>Paris, Faidherbes</option>
-          <option>Paris, Bastille</option>
-        </select>
-      </div>
+    <header> 
+      <section id="cityChoise">
+        <h1><a>ohmyfood</a></h1>
+        <p><i class="fa-map-marker-alt fas"></i>Paris, Belleville</p>
+      </section>
     </header>
     <!--AND HEADER-->
     <!--OPEN MAIN-->
     <!--OPEN MAIN-->
     <main>
-      <section>
+      <section id="menu">
         <h2>Réservez le menu qui vous convient</h2>
         <p>Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
-        <a href="#">Explorer nos restaurants</a>
+        <a href="#restaurant">Explorer nos restaurants</a>
       </section>
-      <section>
+      <section id="fonction">
         <h3>Fonctionnement</h3>
         <ol>
           <li>
@@ -76,18 +67,16 @@
           </li>
         </ol>
       </section>
-      <section>
+      <section id="restaurant">
         <h3>Restaurants</h3>
         <article>
           <figure>
             <a href="#">
-              <div>
                 <span>Nouveau</span>
                 <img
                   src="./assets/images/restaurants/palette-du-gout.jpg"
                   alt="Assiette gastronomique du restaurant La palette du gout"
                 />
-              </div>
             </a>
             <figcaption>
               <a href="#">
@@ -101,13 +90,13 @@
         <article>
           <figure>
             <a href="#">
-              <div>
+              
                 <span>Nouveau</span>
                 <img
                   src="./assets/images/restaurants/enchantee.jpg"
                   alt="assiette garnie du restaurant La note enchantée"
                 />
-              </div>
+            
             </a>
             <figcaption>
               <a href="#">
@@ -121,12 +110,12 @@
         <article>
           <figure>
             <a href="#">
-              <div>
+              
                 <img
                   src="./assets/images/restaurants/francaise.jpg"
                   alt="plat gastronomique garnie du restaurant À la française "
                 />
-              </div>
+              
             </a>
             <figcaption>
               <a href="#">
@@ -140,12 +129,10 @@
         <article>
           <figure>
             <a href="#">
-              <div>
                 <img
                   src="./assets/images/restaurants/delice-des-sens.jpg"
                   alt="Assiette rectangulaire au couleurs garnie du restaurant Le délice des sens"
                 />
-              </div>
             </a>
             <figcaption>
               <a href="#">
@@ -159,14 +146,13 @@
       </section>
     </main>
     <footer>
-      <div>
-        <h5><a href="#goToTitle" id="goToFoot">ohmyfood</a></h5>
-        <!--TO RETURN TO HEADER-->
-        <nav>
+      <nav>
+        <h5><a>ohmyfood</a></h5>
+        <div>
           <ul>
             <li>
               <a href="#"
-                ><i class="fas fa-utensils"></i>&nbsp;&nbsp;Proposez un
+                ><i class="fas fa-utensils"></i>Proposez un
                 restaurant</a
               >
             </li>
@@ -179,8 +165,8 @@
             <li><a href="#">Mentions légales</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </footer>
   </body>
 </html>
