@@ -1,0 +1,33 @@
+footer {
+    background-color: $darkgrey;
+    height: 200px;
+      nav {
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+          height: 100px;
+            h5 {
+                padding-bottom: 20px;
+              a {
+              font-family: 'Shrikhand';
+              font-size: 1.1rem;
+              text-decoration: none;
+              color: $white;
+              
+              }
+            }
+          div {
+            li{
+                padding: 5px 0;
+             a {
+                 color: white;
+                 text-decoration: none;
+                 font-family:'Roboto';
+                 i {
+                     padding-right: 10px;
+                 }
+             }
+            }
+          }
+      }
+}
