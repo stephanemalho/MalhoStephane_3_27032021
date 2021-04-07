@@ -12,6 +12,7 @@
 * {
   box-sizing: border-box;
 }
+
 #fonction,
 #restaurants {
   padding: 0 5%;
@@ -45,7 +46,7 @@
     box-shadow: 3px 6px 7px $shadow;
     border-radius: 30px;
     margin: 10px 0 50px 0;
-    min-width: 55%;
+    min-width: 200px;
     height: 50px;
     align-items: center;
     display: flex;
@@ -189,5 +190,111 @@
         font-size: 1.5rem;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 510px) {
+  #menu {
+    padding-top: 15px;
+    height: 200px;
+    a {
+      width: 200px;
+      max-width: 200px;
+      height: 50px;
+    }
+  }
+
+  #fonction,
+  #restaurants {
+    padding: 0 20% 50px 20%;
+  }
+  #restaurants {
+    article {
+      figure {
+        a {
+          span {
+            right: 23%;
+          }
+        }
+      }
+      figcaption {
+        i {
+          right: 23%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 900px) {
+  #menu {
+    a {
+      min-width: inherit;
+      width: 200px;
+      max-width: 200px;
+    }
+  }
+  #fonction {
+    padding: 0 10%;
+    ol {
+      justify-content: center;
+      padding-top: 30px;
+      li {
+        flex-basis: 65%;
+      }
+    }
+  }
+  #restaurants {
+    padding: 30px 10% 50px 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    h3 {
+      flex-basis: 100%;
+    }
+    article {
+      flex-basis: 45%;
+       figure {
+         a {
+           .new1 {
+             right: 56%;
+           }
+           .new2 {
+             right: 12%;
+           }
+         }
+       }
+       figcaption {
+         .one {
+           right: 56%;
+         }
+         .two {
+           right: 12%;
+         }
+         .three {
+           right:56%;
+         }
+         .four {
+           right:12%;
+         }
+       }
+    }
+    
+    
+
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #fonction {
+    padding: 10%;
+    height: 300px;
+      h3 {
+        padding-top: 0;
+      }
+      ol { 
+        justify-content: space-between;
+          li {
+            flex-basis: 30% ;
+          }
+      }
   }
 }
