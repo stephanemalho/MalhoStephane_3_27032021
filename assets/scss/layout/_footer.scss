@@ -1,7 +1,9 @@
 footer {
     background-color: $darkgrey;
     height: 200px;
+    div {
       nav {
+         
           display: flex;
           flex-direction: column;
           padding: 20px;
@@ -30,20 +32,35 @@ footer {
             }
           }
       }
+    }
 }
 @media only screen and (min-width:510px){
    footer {
+     div {
      nav {
        margin-left: 17%;
      }
+    }
    }
 
 }
 @media only screen and (min-width: 900px) {
    footer {
+     div {
      nav {
        margin-left: 10%;
        padding: 20px 0 ;
      }
+    }
    }
+}
+@media only screen and (min-width: 1200px) {
+  footer {
+    background-color:$darkgrey;
+   .blocFooter {
+     margin: auto;
+     max-width: 1200px;
+     padding: 0 2%;
+   }
+ }
 }
