@@ -91,7 +91,9 @@ footer {
     footer .blocFooter {
       margin: auto;
       max-width: 1200px;
-      padding: 0 2%; } }
+      padding: 0 10%; }
+      footer .blocFooter nav {
+        margin-left: 0; } }
 
 #cityChoise {
   display: flex;
