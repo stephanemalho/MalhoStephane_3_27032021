@@ -196,7 +196,10 @@
 @media only screen and (min-width: 510px) {
   #menu {
     padding-top: 15px;
-    height: 200px;
+    height: 230px;
+    h2 {
+      padding-top: 20px;
+    }
     a {
       width: 200px;
       max-width: 200px;

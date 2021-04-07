@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -99,7 +100,7 @@ footer {
     align-items: center;
     font-size: 2rem;
     background-color: #f6f6f6;
-    box-shadow: 0px 2px 5px #a3a3a3;
+    box-shadow: 0px 2px 5px #ccc;
     z-index: 3;
     padding-top: 5px; }
     #cityChoise h1 a {
@@ -150,7 +151,7 @@ footer {
     text-decoration: none;
     background: linear-gradient(360deg, #9356dc 0%, #e872da 100%);
     color: #ffffff;
-    box-shadow: 3px 6px 7px #a3a3a3;
+    box-shadow: 3px 6px 7px #ccc;
     border-radius: 30px;
     margin: 10px 0 50px 0;
     min-width: 200px;
@@ -224,7 +225,7 @@ footer {
     flex-direction: column;
     margin: 10px 0;
     height: 250px;
-    box-shadow: 0 3px 5px #a3a3a3;
+    box-shadow: 0 3px 5px #ccc;
     border-radius: 15px; }
     #restaurants article figure {
       display: flex;
@@ -280,7 +281,9 @@ footer {
 @media only screen and (min-width: 510px) {
   #menu {
     padding-top: 15px;
-    height: 200px; }
+    height: 230px; }
+    #menu h2 {
+      padding-top: 20px; }
     #menu a {
       width: 200px;
       max-width: 200px;
