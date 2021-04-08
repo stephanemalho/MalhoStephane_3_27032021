@@ -55,44 +55,39 @@ table {
 footer {
   background-color: #353535;
   height: 200px; }
-  footer div nav {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    height: 100px; }
-    footer div nav h5 {
-      padding-bottom: 20px; }
-      footer div nav h5 a {
-        font-family: 'Shrikhand';
-        font-size: 1.1rem;
-        text-decoration: none;
-        color: #ffffff; }
-    footer div nav div li {
-      padding: 5px 0; }
-      footer div nav div li a {
-        color: white;
-        text-decoration: none;
-        font-family: 'Roboto'; }
-        footer div nav div li a i {
-          padding-right: 10px; }
-
-@media only screen and (min-width: 510px) {
-  footer div nav {
-    margin-left: 17%; } }
+  footer div:nth-child(1) {
+    margin-left: 5%; }
+    footer div:nth-child(1) nav {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0;
+      height: 100px; }
+      footer div:nth-child(1) nav h5 {
+        padding-bottom: 20px 0; }
+        footer div:nth-child(1) nav h5 a {
+          font-family: 'Shrikhand';
+          font-size: 1.1rem;
+          text-decoration: none;
+          color: #ffffff; }
+      footer div:nth-child(1) nav div li {
+        padding: 5px 0; }
+        footer div:nth-child(1) nav div li a {
+          color: white;
+          text-decoration: none;
+          font-family: 'Roboto'; }
+          footer div:nth-child(1) nav div li a i {
+            padding-right: 10px; }
 
 @media only screen and (min-width: 900px) {
-  footer div nav {
-    margin-left: 10%;
+  footer div:nth-child(1) nav {
     padding: 20px 0; } }
 
 @media only screen and (min-width: 1200px) {
   footer {
     background-color: #353535; }
-    footer .blocFooter {
-      margin: auto;
-      max-width: 1200px;
-      padding: 0 10%; }
-      footer .blocFooter nav {
+    footer div:nth-child(1) {
+      margin: 0 10%; }
+      footer div:nth-child(1) nav {
         margin-left: 0; } }
 
 #cityChoise {
@@ -133,15 +128,14 @@ footer {
 * {
   box-sizing: border-box; }
 
-#fonction {
-  padding: 0 5%; }
-
-#restaurants .bloc {
-  padding: 0 5%; }
+#fonction div {
+  margin: 5%; }
 
 #restaurants {
   background-color: #f6f6f6;
-  padding-bottom: 50px; }
+  padding-bottom: 40px; }
+  #restaurants div {
+    margin: 5%; }
 
 #menu {
   display: flex;
@@ -232,28 +226,28 @@ footer {
 
 #restaurants {
   background-color: #f6f6f6; }
-  #restaurants .bloc {
+  #restaurants div {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-    #restaurants .bloc h3 {
+    #restaurants div h3 {
       font-size: 1.5rem;
       font-weight: bold;
       padding: 50px 0 20px 0; }
-    #restaurants .bloc article {
+    #restaurants div article {
       display: flex;
       flex-direction: column;
       margin: 10px 0;
       height: 250px;
       box-shadow: 0 3px 5px #ccc;
       border-radius: 15px; }
-      #restaurants .bloc article figure {
+      #restaurants div article figure {
         display: flex;
         flex-direction: column;
         height: 100%; }
-        #restaurants .bloc article figure a {
+        #restaurants div article figure a {
           position: relative; }
-          #restaurants .bloc article figure a span {
+          #restaurants div article figure a span {
             position: absolute;
             right: 5%;
             display: flex;
@@ -265,21 +259,21 @@ footer {
             font-size: 0.9rem;
             padding: 0 10px;
             margin-top: 15px; }
-          #restaurants .bloc article figure a img {
+          #restaurants div article figure a img {
             border-radius: 15px 15px 0 0;
             height: 175px;
             -o-object-fit: cover;
                object-fit: cover;
             -o-object-position: 50% 65%;
                object-position: 50% 65%; }
-      #restaurants .bloc article img {
+      #restaurants div article img {
         width: 100%; }
-      #restaurants .bloc article figcaption {
+      #restaurants div article figcaption {
         position: relative;
         display: flex;
         flex-direction: column;
         height: 100%; }
-        #restaurants .bloc article figcaption a {
+        #restaurants div article figcaption a {
           text-decoration: none;
           display: flex;
           flex-direction: column;
@@ -288,13 +282,13 @@ footer {
           padding-left: 15px;
           height: 100%;
           width: 172px; }
-        #restaurants .bloc article figcaption h4 {
+        #restaurants div article figcaption h4 {
           color: #010101;
           font-weight: bold;
           font-size: 1.1rem; }
-        #restaurants .bloc article figcaption p {
+        #restaurants div article figcaption p {
           color: #010101; }
-        #restaurants .bloc article figcaption i {
+        #restaurants div article figcaption i {
           padding-top: 0px;
           position: absolute;
           right: 5%;
@@ -309,51 +303,44 @@ footer {
       padding-top: 20px; }
     #menu a {
       width: 200px;
-      max-width: 200px;
-      height: 50px; }
-  #fonction {
-    padding: 0 20% 50px 20%; }
-  #restaurants .bloc {
-    padding: 0 20% 50px 20%; } }
+      height: 50px; } }
 
 @media only screen and (min-width: 510px) and (min-width: 900px) {
   #menu a {
     min-width: inherit;
     width: 200px;
     max-width: 200px; }
-  #fonction {
-    padding: 0 10%; }
-    #fonction ol {
-      justify-content: center;
-      padding-top: 30px; }
-      #fonction ol li {
-        flex-basis: 65%; }
+  #fonction ol {
+    justify-content: center;
+    padding-top: 30px; }
+    #fonction ol li {
+      flex-basis: 65%; }
   #restaurants {
     background-color: #f6f6f6; }
-    #restaurants .bloc {
-      padding: 30px 10% 50px 10%;
+    #restaurants div {
       flex-direction: row;
       flex-wrap: wrap; }
-      #restaurants .bloc h3 {
+      #restaurants div h3 {
         flex-basis: 100%; }
-      #restaurants .bloc article {
+      #restaurants div article {
         flex-basis: 45%; } }
 
 @media only screen and (min-width: 1200px) {
   #fonction {
-    margin: auto;
-    max-width: 1200px;
-    padding: 10%;
     height: 300px; }
-    #fonction h3 {
-      padding-top: 0; }
-    #fonction ol {
-      justify-content: space-between; }
-      #fonction ol li {
-        flex-basis: 30%; }
+    #fonction div {
+      height: 100%;
+      margin: 0 10%; }
+      #fonction div h3 {
+        padding-top: 50px; }
+      #fonction div ol {
+        padding-top: 0;
+        height: 200px;
+        justify-content: space-between; }
+        #fonction div ol li {
+          flex-basis: 30%; }
   #restaurants {
     background-color: #f6f6f6; }
-    #restaurants .bloc {
-      margin: auto;
-      max-width: 1200px; } }
+    #restaurants div {
+      margin: 0 10%; } }
 

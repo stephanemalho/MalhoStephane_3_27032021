@@ -12,18 +12,17 @@
 * {
   box-sizing: border-box;
 }
-
- #fonction {
-  padding: 0 5%;
- }
- #restaurants {
-   .bloc {
-  padding: 0 5%;
-   }
- }
+#fonction {
+  div {
+    margin: 5%;
+  }
+}
 #restaurants {
   background-color: $lightgrey;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
+  div {
+    margin: 5%;
+  }
 }
 #menu {
   display: flex;
@@ -131,7 +130,7 @@
 
 #restaurants {
   background-color: $lightgrey;
-  .bloc {
+  div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -223,19 +222,10 @@
     }
     a {
       width: 200px;
-      max-width: 200px;
       height: 50px;
     }
   }
 
-  #fonction {
-    padding: 0 20% 50px 20%;
-  }
-  #restaurants {
-    .bloc {
-      padding: 0 20% 50px 20%;
-    }
-  }
 
 @media only screen and (min-width: 900px) {
   #menu {
@@ -246,7 +236,7 @@
     }
   }
   #fonction {
-    padding: 0 10%;
+    
     ol {
       justify-content: center;
       padding-top: 30px;
@@ -257,8 +247,7 @@
   }
   #restaurants {
     background-color: $lightgrey;
-    .bloc{
-    padding: 30px 10% 50px 10%;
+    div {
     flex-direction: row;
     flex-wrap: wrap;
     h3 {
@@ -277,25 +266,28 @@
 
 @media only screen and (min-width: 1200px) {
   #fonction {
-    margin: auto;
-    max-width: 1200px;
-    padding: 10%;
     height: 300px;
+    div{ 
+    height: 100%;
+    margin: 0 10%;
       h3 {
-        padding-top: 0;
+        padding-top: 50px;
       }
       ol { 
+        padding-top: 0;
+        height: 200px;
         justify-content: space-between;
           li {
             flex-basis: 30% ;
           }
       }
+    }
   }
   #restaurants {
     background-color: $lightgrey;
-    .bloc{
-      margin: auto;
-      max-width: 1200px;
+    div{
+      margin: 0 10%;
+      
     }
   }
 }

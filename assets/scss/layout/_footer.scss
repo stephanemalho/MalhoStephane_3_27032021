@@ -1,15 +1,16 @@
 footer {
     background-color: $darkgrey;
     height: 200px;
-    div {
+    div:nth-child(1) {
+      margin-left: 5%;
       nav {
          
           display: flex;
           flex-direction: column;
-          padding: 20px;
+          padding: 20px 0;
           height: 100px;
             h5 {
-                padding-bottom: 20px;
+                padding-bottom: 20px 0;
               a {
               font-family: 'Shrikhand';
               font-size: 1.1rem;
@@ -34,21 +35,11 @@ footer {
       }
     }
 }
-@media only screen and (min-width:510px){
-   footer {
-     div {
-     nav {
-       margin-left: 17%;
-     }
-    }
-   }
 
-}
 @media only screen and (min-width: 900px) {
    footer {
-     div {
+     div:nth-child(1) {
      nav {
-       margin-left: 10%;
        padding: 20px 0 ;
      }
     }
@@ -57,13 +48,11 @@ footer {
 @media only screen and (min-width: 1200px) {
   footer {
     background-color:$darkgrey;
-   .blocFooter {
-     margin: auto;
-     max-width: 1200px;
-     padding: 0 10%;
-       nav {
-         margin-left: 0;
-       }
+    div:nth-child(1) {
+      margin: 0 10%;
+      nav {
+      margin-left: 0;
+     }
    }
  }
 }
