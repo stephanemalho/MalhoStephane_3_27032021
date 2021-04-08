@@ -60,8 +60,7 @@ footer {
     footer div:nth-child(1) nav {
       display: flex;
       flex-direction: column;
-      padding: 20px 0;
-      height: 100px; }
+      padding: 20px 0; }
       footer div:nth-child(1) nav h5 {
         padding-bottom: 20px 0; }
         footer div:nth-child(1) nav h5 a {
@@ -220,10 +219,10 @@ footer {
           font-size: 1.3rem; }
     #fonction ol li:hover {
       background-color: #f5edff;
-      transition-duration: 900ms; }
+      transition-duration: 500ms; }
       #fonction ol li:hover a i {
         color: #9356dc;
-        transition-duration: 1300ms; }
+        transition-duration: 500ms; }
 
 #restaurants {
   background-color: #f6f6f6; }
