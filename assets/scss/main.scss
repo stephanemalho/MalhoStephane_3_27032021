@@ -266,10 +266,12 @@
 
 @media only screen and (min-width: 1200px) {
   #fonction {
+    max-width: 1200px;
+    margin: auto;
     height: 300px;
     div{ 
     height: 100%;
-    margin: 0 10%;
+    margin: 0;
       h3 {
         padding-top: 50px;
       }
@@ -286,7 +288,8 @@
   #restaurants {
     background-color: $lightgrey;
     div{
-      margin: 0 10%;
+      margin: auto;
+      max-width: 1200px;
       
     }
   }
