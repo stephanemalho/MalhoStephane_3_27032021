@@ -8,7 +8,7 @@
       content="Venez découvrir le restaurant A la française sur Ohmyfood !"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/menus.css" />
+    <link rel="stylesheet" href="../assets/css/menus.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
@@ -26,7 +26,7 @@
       rel="stylesheet"
     />
   </head>
-  <header>
+  <header id="headerMenu">
     <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
     <a href="../index.html"><h1>Ohmyfood</h1></a>
   </header>
@@ -35,10 +35,10 @@
       src="../assets/images/restaurants/francaise.jpg"
       alt="table de restaurant garnie d'assiettes gastronimique"
     />
-    <section id="menu">
+    <section id="carte">
       <h2>À la française<i class="far fa-heart"></i></h2>
       <section id="entries">
-        <h3>Entrées</h3>
+        <h3>ENTRÉES</h3>
         <article>
           <div>
             <h4>Tartare de poulpe acidulé</h4>
@@ -65,7 +65,7 @@
         </article>
       </section>
       <section id="main-courses">
-        <h3>Plats</h3>
+        <h3>PLATS</h3>
         <article>
           <div>
             <h4>Coquilles Saint-Jacques</h4>
@@ -92,7 +92,7 @@
         </article>
       </section>
       <section id="desserts">
-        <h3>Désserts</h3>
+        <h3>DÉSSERTS</h3>
         <article>
           <div>
             <h4>Pétales de violettes glacés</h4>
@@ -117,11 +117,12 @@
           <p>23&euro;</p>
           <i class="fas fa-check-circle"></i>
         </article>
-        <div id="button"><button type="submit">Commander</button></div>
+        <div id="button"><a href="#">Commander</a></div>
       </section>
     </section>
   </main>
   <footer>
+    <div>
     <nav>
       <h5><a href="./index.html">ohmyfood</a></h5>
       <div>
@@ -141,5 +142,6 @@
         </ul>
       </div>
     </nav>
+  </div>
   </footer>
 </html>
