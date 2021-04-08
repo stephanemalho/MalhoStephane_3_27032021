@@ -1,0 +1,59 @@
+footer {
+    background-color: $darkgrey;
+    height: 200px;
+    div:nth-child(1) {
+      margin-left: 5%;
+      nav {
+         
+          display: flex;
+          flex-direction: column;
+          padding: 20px 0;
+            h5 {
+                padding-bottom: 20px 0;
+              a {
+              font-family: 'Shrikhand';
+              font-size: 1.1rem;
+              text-decoration: none;
+              color: $white;
+              
+              }
+            }
+          div {
+            li{
+                padding: 5px 0;
+             a {
+                 color: white;
+                 text-decoration: none;
+                 font-family:'Roboto';
+                 i {
+                     padding-right: 10px;
+                 }
+             }
+            }
+          }
+      }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+   footer {
+     div:nth-child(1) {
+     nav {
+       padding: 20px 0 ;
+     }
+    }
+   }
+}
+@media only screen and (min-width: 1200px) {
+  
+  footer {
+    background-color:$darkgrey;
+    div:nth-child(1) {
+      max-width: 1200px;
+      margin: 0 auto;
+      nav {
+      margin-left: 0;
+     }
+   }
+ }
+}
