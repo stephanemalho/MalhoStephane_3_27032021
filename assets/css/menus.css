@@ -196,3 +196,17 @@ main img {
       justify-content: center;
       border: none; }
 
+@media only screen and (min-width: 481px) {
+  img {
+    height: 350px; }
+  #carte {
+    margin: -50px auto;
+    max-width: 700px; }
+  footer {
+    margin-top: 50px; }
+    footer div:nth-child(1) {
+      margin: 0 auto;
+      max-width: 700px; }
+      footer div:nth-child(1) nav {
+        margin-left: 5%; } }
+
