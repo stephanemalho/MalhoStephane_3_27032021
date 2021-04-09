@@ -139,8 +139,9 @@ main img {
     font-family: 'Shrikhand';
     height: 75px;
     display: flex;
-    justify-content: space-around;
-    align-items: center; }
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%; }
 
 #entries, #main-courses {
   height: 300px; }
@@ -202,5 +203,16 @@ main img {
     margin-bottom: -30px; }
   #carte {
     margin: 0 auto;
-    max-width: 700px; } }
+    max-width: 700px;
+    z-index: 1000; }
+  main #imgStyle::before {
+    position: absolute;
+    z-index: 500;
+    height: 130px;
+    top: 187px;
+    background: linear-gradient(to bottom, rgba(252, 252, 252, 0), rgba(200, 200, 200, 0.5), #ffffff);
+    content: '';
+    width: 100%; }
+    main #imgStyle::before img {
+      height: 250px; } }
 
