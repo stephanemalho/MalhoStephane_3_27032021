@@ -114,20 +114,12 @@ main {
 @media only screen and (min-width: 481px) {
    img {
        height: 350px;
+       margin-bottom: -30px;
    }
    #carte {
-       margin: -50px auto ;
+       margin: 0 auto ;
        max-width: 700px;
    }
-   footer {
-       margin-top: 50px;
-       div:nth-child(1) {
-          margin: 0 auto;
-          max-width: 700px;
-            nav {
-                margin-left: 5%;
-            }
-       }
-   }
+   
 }
     
