@@ -199,18 +199,20 @@ main img {
 
 @media only screen and (min-width: 481px) {
   img {
-    height: 350px;
+    height: 300px;
     margin-bottom: -30px; }
   #carte {
     margin: 0 auto;
     max-width: 700px;
     z-index: 1000; }
+  #imgStyle {
+    height: 190px; }
   main #imgStyle::before {
     position: absolute;
     z-index: 500;
-    height: 107px;
-    top: 208px;
-    background: linear-gradient(to bottom, rgba(252, 252, 252, 0), rgba(200, 200, 200, 0.5), #ffffff);
+    height: 55px;
+    top: 260px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
     content: '';
     width: 100%; }
     main #imgStyle::before img {
