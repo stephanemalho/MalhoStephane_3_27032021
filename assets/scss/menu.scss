@@ -113,30 +113,29 @@ main {
       
 }
 @media only screen and (min-width: 481px) {
-   img {
-       height: 300px;
-       margin-bottom: -30px;
-   }
+
    #carte {
        margin: 0 auto ;
        max-width: 700px;
        z-index: 1000;
    }
-   #imgStyle {
-  height: 190px;
+  #imgStyle {
+ height: 223px;
    }
 main {
+
+
+        img {
+            height: 300px;
+        }
         #imgStyle::before {
             position: absolute;
             z-index: 500;
             height: 55px;
-            top: 260px;
+            top: 310px;
             background: linear-gradient(to bottom, rgba(255, 255, 255, 0), $white);
             content: '';
             width: 100%;
-            img {
-                height: 250px;
-            }
        }
 }
 }
