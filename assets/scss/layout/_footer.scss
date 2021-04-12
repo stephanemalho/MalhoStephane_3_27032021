@@ -1,7 +1,7 @@
 footer {
     background-color: $darkgrey;
     height: 200px;
-    div:nth-child(1) {
+    > div {
       margin-left: 5%;
       nav {
          
@@ -26,7 +26,8 @@ footer {
                  text-decoration: none;
                  font-family:'Roboto';
                  i {
-                     padding-right: 10px;
+                     margin-right: 20px;
+                     width: 10px;
                  }
              }
             }
@@ -37,7 +38,7 @@ footer {
 
 @media only screen and (min-width: 900px) {
    footer {
-     div:nth-child(1) {
+    > div {
      nav {
        padding: 20px 0 ;
      }
@@ -48,7 +49,7 @@ footer {
   
   footer {
     background-color:$darkgrey;
-    div:nth-child(1) {
+    > div {
       max-width: 1200px;
       margin: 0 auto;
       nav {

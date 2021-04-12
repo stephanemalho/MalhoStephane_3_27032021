@@ -62,39 +62,40 @@ table {
 footer {
   background-color: #353535;
   height: 200px; }
-  footer div:nth-child(1) {
+  footer > div {
     margin-left: 5%; }
-    footer div:nth-child(1) nav {
+    footer > div nav {
       display: flex;
       flex-direction: column;
       padding: 20px 0; }
-      footer div:nth-child(1) nav h5 {
+      footer > div nav h5 {
         padding-bottom: 20px 0; }
-        footer div:nth-child(1) nav h5 a {
+        footer > div nav h5 a {
           font-family: 'Shrikhand';
           font-size: 1.1rem;
           text-decoration: none;
           color: #ffffff; }
-      footer div:nth-child(1) nav div li {
+      footer > div nav div li {
         padding: 5px 0; }
-        footer div:nth-child(1) nav div li a {
+        footer > div nav div li a {
           color: white;
           text-decoration: none;
           font-family: 'Roboto'; }
-          footer div:nth-child(1) nav div li a i {
-            padding-right: 10px; }
+          footer > div nav div li a i {
+            margin-right: 20px;
+            width: 10px; }
 
 @media only screen and (min-width: 900px) {
-  footer div:nth-child(1) nav {
+  footer > div nav {
     padding: 20px 0; } }
 
 @media only screen and (min-width: 1200px) {
   footer {
     background-color: #353535; }
-    footer div:nth-child(1) {
+    footer > div {
       max-width: 1200px;
       margin: 0 auto; }
-      footer div:nth-child(1) nav {
+      footer > div nav {
         margin-left: 0; } }
 
 h1 {
@@ -130,7 +131,8 @@ a {
     font-size: 1.2rem;
     height: 50px;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    color: #353535; }
     #cityChoise p i {
       font-size: 1.1rem;
       margin-right: 15px; }
@@ -215,7 +217,7 @@ a {
       #fonction ol li a {
         display: flex;
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         padding-right: 15%;
         text-decoration: none;
@@ -278,7 +280,6 @@ a {
       #restaurants div article figcaption {
         position: relative;
         display: flex;
-        flex-direction: column;
         height: 100%; }
         #restaurants div article figcaption a {
           text-decoration: none;

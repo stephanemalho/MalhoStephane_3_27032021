@@ -1,11 +1,5 @@
 @import "./main.scss";
-// * {
-//     font-family: 'Roboto', sans-serif ;
-//     h4 {
-//         font-weight: bold;
-//         font-size: 1.2rem;
-//     }
-// }
+
 #headerMenu {
   display: flex;
   flex-direction: row;
@@ -65,27 +59,37 @@ main {
           height: 30px;
       }
       article {
+        // position: relative;
         background-color: white;
         height: 70px;
         border-radius: 15px;
         box-shadow: 0px 5px 7px $shadow;
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        padding: 3%;
+        padding:0 3%;
           div {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            flex-basis: 95%;
-            height: 65px;
-            align-content: center;
-              p {
-                  span {
-                      display: none;
-                  }
-              }
+            width: 100%;
+            // flex-basis: 95%;
+            // height: 65px;
+            // align-content: center; 
+            h4, p {
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                width:80%;
+            }
           }
+          span {
+                // position: absolute;
+                // right: 3%;
+                // top: 57%;
+                display: flex;
+                align-items: end;
+                margin-bottom: 10px;
+              }
           i {
               display: none;
           }
@@ -116,27 +120,16 @@ main {
 
    #carte {
        margin: 0 auto ;
-       max-width: 700px;
+       max-width: 1100px;
        z-index: 1000;
    }
-  #imgStyle {
- height: 223px;
-   }
-main {
-
-
+ main {
+    > figure {
+        height: 230px;
         img {
             height: 300px;
-        }
-        #imgStyle::before {
-            position: absolute;
-            z-index: 500;
-            height: 55px;
-            top: 310px;
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), $white);
-            content: '';
-            width: 100%;
        }
+    }
 }
 }
     
