@@ -77,15 +77,13 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      width: 100%;
+      width: 80%;
       h4,
       p {
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
-      }
-      p {
-        width:80%;
+        width: 100%;
       }
     }
     span {

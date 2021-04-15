@@ -182,7 +182,7 @@ main > figure img {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      width: 100%; }
+      width: 80%; }
       #entries article div h4,
       #entries article div p,
       #main-courses article div h4,
@@ -191,11 +191,8 @@ main > figure img {
       #desserts article div p {
         text-overflow: ellipsis;
         overflow: hidden;
-        white-space: nowrap; }
-      #entries article div p,
-      #main-courses article div p,
-      #desserts article div p {
-        width: 80%; }
+        white-space: nowrap;
+        width: 100%; }
     #entries article span,
     #main-courses article span,
     #desserts article span {
