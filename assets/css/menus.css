@@ -156,7 +156,8 @@ main > figure img {
   flex-basis: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  min-width: 0; }
   #entries h3,
   #main-courses h3,
   #desserts h3 {
@@ -173,7 +174,8 @@ main > figure img {
     box-shadow: 0px 5px 7px #ccc;
     display: flex;
     justify-content: space-between;
-    padding: 0 3%; }
+    padding: 0 3%;
+    position: relative; }
     #entries article div,
     #main-courses article div,
     #desserts article div {
@@ -189,14 +191,17 @@ main > figure img {
       #desserts article div p {
         text-overflow: ellipsis;
         overflow: hidden;
-        white-space: nowrap;
+        white-space: nowrap; }
+      #entries article div p,
+      #main-courses article div p,
+      #desserts article div p {
         width: 80%; }
     #entries article span,
     #main-courses article span,
     #desserts article span {
-      display: flex;
-      align-items: flex-end;
-      margin-bottom: 10px; }
+      position: absolute;
+      right: 10px;
+      bottom: 10px; }
     #entries article i,
     #main-courses article i,
     #desserts article i {
