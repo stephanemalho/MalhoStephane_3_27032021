@@ -174,7 +174,13 @@ a {
     height: 50px;
     align-items: center;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    transform: scale(1);
+    transition: all 700ms; }
+  #menu a:hover {
+    background: linear-gradient(360deg, #782cd3 0%, #e872da 70%, #ef9ee6 100%);
+    box-shadow: 3px 6px 7px #ada8a8;
+    transform: scale(1.05); }
 
 #fonction {
   height: 450px;

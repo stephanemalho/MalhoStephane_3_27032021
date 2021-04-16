@@ -222,7 +222,15 @@ main > figure img {
       align-items: center;
       display: flex;
       justify-content: center;
-      border: none; }
+      border: none;
+      transform: scale(1);
+      transition: all transform 700ms; }
+    #entries #button a:hover,
+    #main-courses #button a:hover,
+    #desserts #button a:hover {
+      background: linear-gradient(360deg, #782cd3 0%, #e872da 70%, #ef9ee6 100%);
+      box-shadow: 3px 6px 7px #ada8a8;
+      transform: scale(1.05); }
 
 @media only screen and (min-width: 481px) {
   #carte {

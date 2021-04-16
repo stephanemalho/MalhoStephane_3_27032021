@@ -1,5 +1,6 @@
 @import "./main.scss";
 
+
 #headerMenu {
   display: flex;
   flex-direction: row;
@@ -95,7 +96,6 @@ main {
       display: none;
     }
   }
-
   #button {
     display: flex;
     align-items: center;
@@ -112,8 +112,16 @@ main {
       display: flex;
       justify-content: center;
       border: none;
+      transform: scale(1);
+      transition : all transform 700ms;
     }
-  }
+    a:hover {
+      background: linear-gradient(360deg,darken( #9356dc, 10%) 0%,#e872da 70%, lighten(#e872da,10%) 100%);
+      box-shadow: 3px 6px 7px rgb(173, 168, 168);
+      transform: scale(1.05) ;
+    }
+  } 
+  
 }
 @media only screen and (min-width: 481px) {
   #carte {
