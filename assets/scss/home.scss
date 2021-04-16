@@ -67,9 +67,8 @@
       text-align: center;
     }
     a {
-      background-color: $purple;
       text-decoration: none;
-      background: linear-gradient(360deg, $darkpurple 0%, $pink 100%);
+      background: $linearGrad;
       color: $white;
       box-shadow: 3px 6px 7px $shadow;
       border-radius: 30px;
@@ -80,12 +79,13 @@
       display: flex;
       justify-content: center;
       transform: scale(1);
-      transition : all 700ms ;
+      transition : all 700ms;
     }
     a:hover {
-      background: linear-gradient(360deg,darken( #9356dc, 10%) 0%,#e872da 70%, lighten(#e872da,10%) 100%);
+      opacity: 0.9;
       box-shadow: 3px 6px 7px rgb(173, 168, 168);
-      transform: scale(1.05) ;
+      transform: scale(1.01);
+      transition : all 1100ms;
     }
   }
   
