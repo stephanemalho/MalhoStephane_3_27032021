@@ -113,7 +113,7 @@ main {
       justify-content: center;
       border: none;
       transform: scale(1);
-      transition : all transform 700ms;
+      transition : all 700ms;
     }
     a:hover {
       background: linear-gradient(360deg,darken( #9356dc, 10%) 0%,#e872da 70%, lighten(#e872da,10%) 100%);

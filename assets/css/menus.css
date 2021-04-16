@@ -224,7 +224,7 @@ main > figure img {
       justify-content: center;
       border: none;
       transform: scale(1);
-      transition: all transform 700ms; }
+      transition: all 700ms; }
     #entries #button a:hover,
     #main-courses #button a:hover,
     #desserts #button a:hover {
