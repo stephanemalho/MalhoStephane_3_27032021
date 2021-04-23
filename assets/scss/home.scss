@@ -10,6 +10,9 @@
   justify-content: center;
   align-items: center;
   animation: hidden 3s forwards;
+  animation: loader 2.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  
+  
   div:nth-of-type(1) {
     border: 7px dotted $pink;
     border-top: 7px dotted $purple;
