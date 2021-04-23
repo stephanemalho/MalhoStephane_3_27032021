@@ -10,8 +10,7 @@
   justify-content: center;
   align-items: center;
   animation: hidden 3s forwards;
-  //animation: loader 2.5s both;
-   animation: loader 3s ease-out both;
+  animation: loader 3s ease-out both;
   
   div:nth-of-type(1) {
     border: 7px dotted $pink;
@@ -22,24 +21,22 @@
     border-radius: 50%;
     animation: spin 2s linear infinite;
   }
-  
+
   .fork {
     position: inherit;
     height: 140px;
     width: 140px;
     border-radius: 50%;
     background-color: $lightgrey;
-     .icon {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       height: 100%;
-       font-size: 4rem;
-       color: $darkgrey;
-     }
-  
-}
-  
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      font-size: 4rem;
+      color: $darkgrey;
+    }
+  }
 }
 #cityChoise {
   display: flex;
