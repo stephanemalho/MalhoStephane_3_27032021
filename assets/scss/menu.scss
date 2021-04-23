@@ -1,5 +1,6 @@
 @import "./main.scss";
 
+
 #headerMenu {
   display: flex;
   flex-direction: row;
@@ -93,25 +94,6 @@ main {
     }
     i {
       display: none;
-    }
-  }
-
-  #button {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    a {
-      background: linear-gradient(360deg, #9356dc 0%, #e872da 100%);
-      color: #ffffff;
-      box-shadow: 3px 6px 7px #ccc;
-      border-radius: 30px;
-      margin: 30px 0;
-      min-width: 200px;
-      height: 50px;
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      border: none;
     }
   }
 }
