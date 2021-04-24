@@ -1,146 +1,184 @@
 @import "./main.scss";
 
+#loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: $white;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hidden 3s forwards;
+  animation: loader 3s ease-out both;
+  
+  div:nth-of-type(1) {
+    border-top: 5px dashed $purple;
+    border-right: 5px dashed $pink;
+    border-bottom: 5px dashed  $darkpurple;
+    border-left: 5px dashed $pink;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+  }
+
+  .fork {
+    position: inherit;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background-color: $lightgrey;
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      font-size: 4rem;
+      color: $darkgrey;
+    }
+  }
+}
 #cityChoise {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   background-color: $lightgrey;
-  height: 110px;
+  height: 111px;
   h1 {
-  height : 60px ;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color:$lightgrey;
-  box-shadow: 0px 2px 5px $shadow;
-  z-index: 3;
-  padding-top: 5px;
- }
- p {
-  background-color: $mediumgrey;
-  display: flex;
-  width: 100%;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  color: $darkgrey;
-  i {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $lightgrey;
+    box-shadow: 0px 2px 5px $shadow;
+    z-index: 3;
+    padding-top: 5px;
+  }
+  p {
+    background-color: $mediumgrey;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: $darkgrey;
+    i {
       font-size: 1.1rem;
       margin-right: 15px;
+    }
   }
- }
 }
 
 #fonction {
-    div {
-      margin: 5%;
-    }
+  div {
+    margin: 5%;
   }
-  #restaurants {
-    background-color: $lightgrey;
-    padding-bottom: 40px;
-    div {
-      margin: 5%;
-    }
+}
+#restaurants {
+  background-color: $lightgrey;
+  padding-bottom: 40px;
+  div {
+    margin: 5%;
   }
-  #menu {
+}
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 45px;
+  background-color: $lightgrey;
+  height: 290px;
+  justify-content: space-between;
+  h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    max-width: 70%;
+    text-align: center;
+  }
+  p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+#fonction {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $white;
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  ol {
+    height: 300px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 45px;
-    background-color: $lightgrey;
-    height: 290px;
-    justify-content: space-between;
-    h2 {
-      font-size: 1.4rem;
-      font-weight: bold;
-      max-width: 70%;
-      text-align: center;
-    }
-    p {
-      font-size: 1.1rem;
-      text-align: center;
-    }
-  }
-  
-  #fonction {
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: $white;
-    h3 {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    ol {
-      height: 300px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    counter-reset: style;
+    li:before {
+      content: counter(style);
+      counter-increment: style;
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-content: space-evenly;
-      counter-reset: style;
-      li:before {
-        content: counter(style);
-        counter-increment: style;
+      align-items: center;
+      justify-content: center;
+      height: 25px;
+      width: 25px;
+      min-width: 25px;
+      line-height: 25px;
+      background-color: $purple;
+      color: $white;
+      border-radius: 25px;
+      margin: 25px 0 0 -10px;
+    }
+    li {
+      width: 100%;
+      height: 75px;
+      margin-top: 10px;
+      display: flex;
+      background-color: $lightgrey;
+      border-radius: 20px;
+      box-shadow: 3px 6px 7px $mediumgrey;
+
+      a {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 25px;
-        width: 25px;
-        min-width: 25px;
-        line-height: 25px;
-        background-color: $purple;
-        color: $white;
-        border-radius: 25px;
-        margin: 25px 0 0 -10px;
-      }
-      li {
         width: 100%;
-        height: 75px;
-        margin-top: 10px;
-        display: flex;
-        background-color: $lightgrey;
-        border-radius: 20px;
-        box-shadow: 3px 6px 7px $mediumgrey;
-         
-        a {
-          display: flex;
-          width: 100%;
-          justify-content: space-around;
-          align-items: center;
-          padding-right: 15%;
-          text-decoration: none;
-          color: $text;
-          font-weight: bold;
-          i {
-            color: $darkgrey;
-            font-size: 1.3rem;
-          }
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 15%;
+        text-decoration: none;
+        color: $text;
+        font-weight: bold;
+        i {
+          color: $darkgrey;
+          font-size: 1.3rem;
         }
-        
       }
-      li:hover {
-        background-color: $lightpurple ;
-        transition-duration: 500ms;
-         a {
-           i {
-             color: $darkpurple;
-             transition-duration: 500ms;
-           }
-         }
+    }
+    li:hover {
+      background-color: $lightpurple;
+      transition-duration: 500ms;
+      a {
+        i {
+          color: $darkpurple;
+          transition-duration: 500ms;
+        }
       }
     }
   }
-  
-  #restaurants {
-    background-color: $lightgrey;
-    div {
+}
+
+#restaurants {
+  background-color: $lightgrey;
+  div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -175,7 +213,7 @@
             padding: 0 10px;
             margin-top: 15px;
           }
-  
+
           img {
             border-radius: 15px 15px 0 0;
             height: 175px;
@@ -190,7 +228,7 @@
       figcaption {
         position: relative;
         display: flex;
-  
+
         height: 100%;
         a {
           text-decoration: none;
@@ -220,19 +258,17 @@
       }
     }
   }
-  }
-  
-  
-  @media only screen and (min-width: 510px) {
-    #menu {
-      padding-top: 15px;
-      height: 230px;
-      h2 {
-        padding-top: 20px;
-      }
+}
+
+@media only screen and (min-width: 510px) {
+  #menu {
+    padding-top: 15px;
+    height: 230px;
+    h2 {
+      padding-top: 20px;
     }
-  
-  
+  }
+
   @media only screen and (min-width: 900px) {
     #menu {
       a {
@@ -242,7 +278,6 @@
       }
     }
     #fonction {
-      
       ol {
         justify-content: center;
         padding-top: 30px;
@@ -254,49 +289,45 @@
     #restaurants {
       background-color: $lightgrey;
       div {
-      flex-direction: row;
-      flex-wrap: wrap;
-      h3 {
-        flex-basis: 100%;
-      }
-      article {
-        flex-basis: 45%;
-        
-         }
-      }
-    }
-    }
-  
-    }
-  
-  
-  @media only screen and (min-width: 1200px) {
-    #fonction {
-      max-width: 1200px;
-      margin: auto;
-      height: 300px;
-      div{ 
-      height: 100%;
-      margin: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
         h3 {
-          padding-top: 50px;
+          flex-basis: 100%;
         }
-        ol { 
-          padding-top: 0;
-          height: 200px;
-          justify-content: space-between;
-            li {
-              flex-basis: 30% ;
-            }
+        article {
+          flex-basis: 45%;
         }
-      }
-    }
-    #restaurants {
-      background-color: $lightgrey;
-      div{
-        margin: auto;
-        max-width: 1200px;
-        
       }
     }
   }
+}
+
+@media only screen and (min-width: 1200px) {
+  #fonction {
+    max-width: 1200px;
+    margin: auto;
+    height: 300px;
+    div {
+      height: 100%;
+      margin: 0;
+      h3 {
+        padding-top: 50px;
+      }
+      ol {
+        padding-top: 0;
+        height: 200px;
+        justify-content: space-between;
+        li {
+          flex-basis: 30%;
+        }
+      }
+    }
+  }
+  #restaurants {
+    background-color: $lightgrey;
+    div {
+      margin: auto;
+      max-width: 1200px;
+    }
+  }
+}
