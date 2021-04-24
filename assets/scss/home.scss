@@ -13,11 +13,12 @@
   animation: loader 3s ease-out both;
   
   div:nth-of-type(1) {
-    border: 5px dashed $pink;
     border-top: 5px dashed $purple;
-    border-bottom: 5px dashed $darkpurple;
-    height: 160px;
-    width: 160px;
+    border-right: 5px dashed $pink;
+    border-bottom: 5px dashed  $darkpurple;
+    border-left: 5px dashed $pink;
+    height: 160.5px;
+    width: 160.5px;
     border-radius: 50%;
     animation: spin 2s linear infinite;
   }
