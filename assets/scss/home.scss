@@ -9,7 +9,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: hidden 3s forwards;
   animation: loader 3s ease-out both;
   
   div:nth-of-type(1) {
@@ -228,7 +227,6 @@
       figcaption {
         position: relative;
         display: flex;
-
         height: 100%;
         a {
           text-decoration: none;
@@ -238,7 +236,7 @@
           flex-wrap: wrap;
           padding-left: 15px;
           height: 100%;
-          width: 172px;
+          flex-basis: 90%;
         }
         h4 {
           color: $text;
@@ -248,14 +246,43 @@
         p {
           color: $text;
         }
-        i {
-          padding-top: 0px;
-          position: absolute;
-          right: 5%;
-          padding-top: 25px;
-          font-size: 1.5rem;
+        // i {
+        //   align-self: center;
+        //   padding-top: 25px;
+        //   font-size: 1.5rem;
+        //  }
+        .icon {
+          fill: transparent;
+          stroke: $darkgrey;
+          stroke-width: 20;
+          cursor: pointer;
+          position: relative;
+          top: 12px;
+          right: 5px;
         }
-      }
+        svg {
+          overflow: visible;
+          width: 1.5rem;
+        }
+        path {
+          stroke-dashoffset: 0;
+          stroke-dasharray: 1550;
+          transform-origin: center;
+        }
+        .heart-background {
+          position: absolute;
+          left: 0;
+          right: 0;
+          z-index: -1;
+          stroke: none;
+        }
+        .heart-main:hover path {
+            animation:stroke-animation 2s ease-in-out forwards;
+        }
+        .heart-main:hover ～ .heart-background path {
+          animation:fade-animation 1s ease-in-out forwards;
+        }
+       }
     }
   }
 }
