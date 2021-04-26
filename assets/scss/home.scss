@@ -235,7 +235,6 @@
           justify-content: space-evenly;
           flex-wrap: wrap;
           padding-left: 15px;
-          
           flex-basis: 90%;
         }
         h4 {
@@ -246,11 +245,6 @@
         p {
           color: $text;
         }
-        // i {
-        //   align-self: center;
-        //   padding-top: 25px;
-        //   font-size: 1.5rem;
-        //  }
         .icon {
           fill: transparent;
           stroke: $darkgrey;
