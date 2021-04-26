@@ -39,8 +39,8 @@
     transform: scale(1);
   }
   80% {
-    stroke:$heartColor;
-    fill: $heartColor;
+    stroke:$pink;
+    fill: $pink;
     transform: scale(1.1);
   }
   90% {
@@ -48,8 +48,8 @@
   }
   100% {
     stroke-dashoffset: 3100;
-    stroke: $heartColor;
-    fill: $heartColor;
+    stroke: $pink;
+    fill: $pink;
   }
 }
 
@@ -59,8 +59,8 @@
     transform: scale(1);
   }
   80% {
-    stroke: $heartColor;
-    fill: $heartColor;
+    stroke: $pink;
+    fill: $pink;
     transform: scale(1.1);
     opacity: 1;
   }
