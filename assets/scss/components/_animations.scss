@@ -37,38 +37,42 @@
     stroke-dashoffset: 3100;
     fill: transparent;
     transform: scale(1);
+    stroke: $pink;
+
   }
   80% {
-    stroke:$purple;
-    fill: $purple;
     transform: scale(1.1);
+    fill: $pink;
   }
   90% {
     transform: scale(1);
   }
   100% {
     stroke-dashoffset: 3100;
-    stroke: $purple;
-    fill: $purple;
+    stroke: $pink;
+    fill: $pink;
     }
 }
 
 @keyframes fade-animation {
   70% {
     fill: transparent;
-    transform: scale(1);
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1;
   }
   80% {
-    stroke: $purple;
-    fill: $purple;
-    transform: scale(1.1);
-    opacity: 1;
+    
+    transform: scale(0.5);
+    opacity: 0.5;
   }
   90% {
+    
     opacity: 1;
   }
   100% {
-    transform: scale(2.5);
-    opacity: 0;
+    
+    transform: scale(1);
+    opacity: 1;
   }
 }
