@@ -9,13 +9,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: hidden 3s forwards;
   animation: loader 3s ease-out both;
-  
+
   div:nth-of-type(1) {
     border-top: 5px dashed $purple;
     border-right: 5px dashed $pink;
-    border-bottom: 5px dashed  $darkpurple;
+    border-bottom: 5px dashed $darkpurple;
     border-left: 5px dashed $pink;
     height: 160px;
     width: 160px;
@@ -191,7 +190,7 @@
       display: flex;
       flex-direction: column;
       margin: 10px 0;
-      height: 250px;
+
       box-shadow: 0 3px 5px $shadow;
       border-radius: 15px;
       figure {
@@ -228,7 +227,6 @@
       figcaption {
         position: relative;
         display: flex;
-
         height: 100%;
         a {
           text-decoration: none;
@@ -237,8 +235,7 @@
           justify-content: space-evenly;
           flex-wrap: wrap;
           padding-left: 15px;
-          height: 100%;
-          width: 172px;
+          flex-basis: 90%;
         }
         h4 {
           color: $text;
@@ -248,12 +245,36 @@
         p {
           color: $text;
         }
-        i {
-          padding-top: 0px;
+        .icon {
+          fill: transparent;
+          stroke: $darkgrey;
+          stroke-width: 30;
+          cursor: pointer;
+          position: relative;
+          &:hover {
+            .heart-main path {
+              animation: stroke-animation 2s ease-in forwards;
+            }
+            .heart-background {
+              animation: fade-animation 2s ease forwards;
+            }
+          }
+        }
+        svg {
+          overflow: visible;
+          width: 1.5rem;
+        }
+        path {
+          stroke-dashoffset: 0;
+          stroke-dasharray: 1550;
+          transform-origin: center;
+        }
+        .heart-background {
           position: absolute;
-          right: 5%;
-          padding-top: 25px;
-          font-size: 1.5rem;
+          left: 0;
+          opacity: 0;
+          z-index: 1;
+          stroke: none;
         }
       }
     }
@@ -328,6 +349,9 @@
     div {
       margin: auto;
       max-width: 1200px;
+    }
+    article {
+      height: 250px;
     }
   }
 }

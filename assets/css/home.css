@@ -117,9 +117,80 @@ table {
     opacity: 0;
     visibility: hidden; } }
 
+@-webkit-keyframes stroke-animation {
+  0% {
+    stroke-dashoffset: 0; }
+  30% {
+    stroke-dashoffset: 1550; }
+  60% {
+    stroke-dashoffset: 3100;
+    fill: transparent;
+    transform: scale(1);
+    stroke: #e872da; }
+  80% {
+    transform: scale(1.1);
+    fill: transparent; }
+  90% {
+    transform: scale(1);
+    fill: transparent; }
+  100% {
+    stroke-dashoffset: 3100;
+    stroke: #e872da;
+    fill: #e872da; } }
+
+@keyframes stroke-animation {
+  0% {
+    stroke-dashoffset: 0; }
+  30% {
+    stroke-dashoffset: 1550; }
+  60% {
+    stroke-dashoffset: 3100;
+    fill: transparent;
+    transform: scale(1);
+    stroke: #e872da; }
+  80% {
+    transform: scale(1.1);
+    fill: transparent; }
+  90% {
+    transform: scale(1);
+    fill: transparent; }
+  100% {
+    stroke-dashoffset: 3100;
+    stroke: #e872da;
+    fill: #e872da; } }
+
+@-webkit-keyframes fade-animation {
+  70% {
+    fill: transparent;
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1; }
+  80% {
+    transform: scale(0.5);
+    opacity: 0.5; }
+  90% {
+    opacity: 1; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes fade-animation {
+  70% {
+    fill: transparent;
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1; }
+  80% {
+    transform: scale(0.5);
+    opacity: 0.5; }
+  90% {
+    opacity: 1; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+
 footer {
-  background-color: #353535;
-  height: 200px; }
+  background-color: #353535; }
   footer > div {
     margin-left: 5%; }
     footer > div nav {
@@ -172,8 +243,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-animation: hidden 3s forwards;
-          animation: hidden 3s forwards;
   -webkit-animation: loader 3s ease-out both;
           animation: loader 3s ease-out both; }
   #loader div:nth-of-type(1) {
@@ -329,7 +398,6 @@ a {
       display: flex;
       flex-direction: column;
       margin: 10px 0;
-      height: 250px;
       box-shadow: 0 3px 5px #ccc;
       border-radius: 15px; }
       #restaurants div article figure {
@@ -370,20 +438,38 @@ a {
           justify-content: space-evenly;
           flex-wrap: wrap;
           padding-left: 15px;
-          height: 100%;
-          width: 172px; }
+          flex-basis: 90%; }
         #restaurants div article figcaption h4 {
           color: #010101;
           font-weight: bold;
           font-size: 1.1rem; }
         #restaurants div article figcaption p {
           color: #010101; }
-        #restaurants div article figcaption i {
-          padding-top: 0px;
+        #restaurants div article figcaption .icon {
+          fill: transparent;
+          stroke: #353535;
+          stroke-width: 30;
+          cursor: pointer;
+          position: relative; }
+          #restaurants div article figcaption .icon:hover .heart-main path {
+            -webkit-animation: stroke-animation 2s ease-in forwards;
+                    animation: stroke-animation 2s ease-in forwards; }
+          #restaurants div article figcaption .icon:hover .heart-background {
+            -webkit-animation: fade-animation 2s ease forwards;
+                    animation: fade-animation 2s ease forwards; }
+        #restaurants div article figcaption svg {
+          overflow: visible;
+          width: 1.5rem; }
+        #restaurants div article figcaption path {
+          stroke-dashoffset: 0;
+          stroke-dasharray: 1550;
+          transform-origin: center; }
+        #restaurants div article figcaption .heart-background {
           position: absolute;
-          right: 5%;
-          padding-top: 25px;
-          font-size: 1.5rem; }
+          left: 0;
+          opacity: 0;
+          z-index: 1;
+          stroke: none; }
 
 @media only screen and (min-width: 510px) {
   #menu {
@@ -432,5 +518,7 @@ a {
     background-color: #f6f6f6; }
     #restaurants div {
       margin: auto;
-      max-width: 1200px; } }
+      max-width: 1200px; }
+    #restaurants article {
+      height: 250px; } }
 
