@@ -38,12 +38,10 @@
     fill: transparent;
     transform: scale(1);
     stroke: $pink;
-
   }
   80% {
     transform: scale(1.1);
     fill: transparent;
-    
   }
   90% {
     transform: scale(1);
@@ -53,7 +51,7 @@
     stroke-dashoffset: 3100;
     stroke: $pink;
     fill: $pink;
-    }
+  }
 }
 
 @keyframes fade-animation {
@@ -64,16 +62,13 @@
     z-index: -1;
   }
   80% {
-    
     transform: scale(0.5);
     opacity: 0.5;
   }
   90% {
-    
     opacity: 1;
   }
   100% {
-    
     transform: scale(1);
     opacity: 1;
   }
