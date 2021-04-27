@@ -250,6 +250,7 @@
           stroke: $darkgrey;
           stroke-width: 30;
           cursor: pointer;
+          position: relative;
         }
         svg {
           overflow: visible;
@@ -263,8 +264,6 @@
         .heart-background {
           position: absolute;
           left: 0;
-          right: 0;
-          z-index: -1;
           stroke: none;
         }
         .heart-main:hover path {
