@@ -107,7 +107,9 @@ main {
     justify-content: space-between;
     padding: 0 3%;
     position: relative;
-    
+    &:hover {
+      cursor: pointer;
+    }
     div {
       display: flex;
       flex-direction: column;
@@ -129,6 +131,41 @@ main {
     }
     i {
       display: none;
+      position: absolute;
+      right: 1px;
+      
+    }
+    #itemHover {
+      width: 1px;
+    }
+    &:hover {
+      p {
+        width: 80%;
+      }
+      
+      i {
+        display: inline;
+        font-size: 1.5rem;
+        color: white;
+        right: 33%;
+      }
+      span {
+        right: 90px;
+      }
+      #itemHover {
+        display: flex;
+        margin-left: auto;
+        position: relative;
+        background-color: $lightgreen;
+        border-radius: 0 15px 15px 0;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $lightgreen ;
+        left: 3.5%;
+        
+      }
     }
   }
 }
