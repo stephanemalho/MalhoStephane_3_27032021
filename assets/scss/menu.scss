@@ -41,6 +41,40 @@ main {
     align-items: center;
     margin: 0 5%;
   }
+  .icon {
+    fill: transparent;
+    stroke: $darkgrey;
+    stroke-width: 30;
+    cursor: pointer;
+    position: absolute;
+    right: 6%;
+    top: 2%;
+    &:hover {
+      .heart-main path {
+        animation: stroke-animation 2s ease-in forwards;
+      }
+      .heart-background {
+        animation: fade-animation 2s ease forwards;
+      }
+    }
+  }
+  svg {
+    overflow: visible;
+    width: 1.5rem;
+  }
+  path {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1550;
+    transform-origin: center;
+  }
+  .heart-background {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    stroke: none;
+  }
+
 }
 #entries,
 #main-courses {
@@ -73,6 +107,7 @@ main {
     justify-content: space-between;
     padding: 0 3%;
     position: relative;
+    
     div {
       display: flex;
       flex-direction: column;
@@ -95,6 +130,39 @@ main {
     i {
       display: none;
     }
+  }
+}
+#entries {
+  article:nth-of-type(1) {
+     animation: slide-top 1s ease-out 0.2s both;
+  }
+  article:nth-of-type(2) {
+     animation: slide-top 1s ease-out 0.4s both;
+  }
+  article:nth-of-type(3) {
+    animation: slide-top 1s ease-out 0.6s both;
+  }
+}
+#main-courses {
+  article:nth-of-type(1) {
+    animation: slide-top 1s ease-out 0.8s both;
+  }
+  article:nth-of-type(2) {
+    animation: slide-top 1s ease-out 1s both;
+  }
+  article:nth-of-type(3) {
+    animation: slide-top 1s ease-out 1.2s both;
+  }
+}
+#desserts {
+  article:nth-of-type(1) {
+    animation: slide-top 1s ease-out 1.4s both;
+  }
+  article:nth-of-type(2) {
+    animation: slide-top 1s ease-out 1.6s both;
+  }
+  article:nth-of-type(3) {
+    animation: slide-top 1s ease-out 1.8s both;
   }
 }
 @media only screen and (min-width: 481px) {
