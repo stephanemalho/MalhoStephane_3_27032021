@@ -139,8 +139,10 @@ main {
     }
     &:hover {
       cursor: pointer;
-       p {
-         width: 80%;
+       div {
+         width: 60%;
+         transition-property: width ;
+         transition-duration: 1s;
        }
 
       i {
