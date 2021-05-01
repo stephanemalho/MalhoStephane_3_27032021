@@ -106,10 +106,9 @@ main {
     justify-content: space-between;
     padding: 0 3%;
     position: relative;
+    overflow: hidden;
     
-    &:hover {
-      cursor: pointer;
-    }
+    
     div {
       display: flex;
       flex-direction: column;
@@ -136,12 +135,13 @@ main {
       right: 1px;
     }
     #itemHover {
-      width: 0px;
+      width: 80px;
     }
     &:hover {
-      p {
-        width: 80%;
-      }
+      cursor: pointer;
+       p {
+         width: 80%;
+       }
 
       i {
         display: inline;
@@ -159,6 +159,7 @@ main {
         display: flex;
         margin-left: auto;
         position: relative;
+       // margin-right: -3.5rem;
         background-color: $lightgreen;
         border-radius: 0 15px 15px 0;
         width: 80px;
