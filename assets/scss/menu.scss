@@ -131,18 +131,21 @@ main {
     }
     i {
       display: none;
-      position: absolute;
-      right: 1px;
     }
     #itemHover {
-      width: 80px;
+      width: 0px;
     }
     &:hover {
       cursor: pointer;
        div {
-         width: 60%;
+         width: 70%;
          transition-property: width ;
-         transition-duration: 1s;
+         transition-duration: 0.6s;
+          P {
+          width: 80%;
+          transition-property: width ;
+          transition-duration: 0.6s;
+         }
        }
 
       i {
@@ -150,18 +153,17 @@ main {
         font-size: 1.5rem;
         color: white;
         right: 33%;
-        animation: iconCheck ease 1s;
+        animation: iconCheck ease 0.6s;
       }
       span {
         right: 90px;
         transition-property: right;
-        transition-duration: 1s;
+        transition-duration: 0.6s;
       }
       #itemHover {
         display: flex;
         margin-left: auto;
         position: relative;
-       // margin-right: -3.5rem;
         background-color: $lightgreen;
         border-radius: 0 15px 15px 0;
         width: 80px;
@@ -170,7 +172,9 @@ main {
         align-items: center;
         border: 1px solid $lightgreen;
         left: 3.5%;
-        animation:  greenCheck 1s ease both;
+        transition-property: width;
+        transition-duration: 0.6s;
+       // animation:  greenCheck 1s ease both;
       }
     }
   }
