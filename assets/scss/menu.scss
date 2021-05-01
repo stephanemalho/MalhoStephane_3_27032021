@@ -127,13 +127,31 @@ main {
       position: absolute;
       right: 10px;
       bottom: 10px;
-      
+      transition-property: right;
+      transition-duration: 0.6s ;
     }
     i {
-      display: none;
+      display: inline;
+      display: inline;
+      font-size: 1.5rem;
+      color: white;
+      right: -10%;
+      animation: iconReturn ease 0.6s; 
     }
     #itemHover {
       width: 0px;
+      transition-duration: 0.6s;
+      display: flex;
+        margin-left: auto;
+        position: relative;
+        background-color: $lightgreen;
+        border-radius: 0 15px 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $lightgreen;
+        left: 4%;
+        transition-property: width;
     }
     &:hover {
       cursor: pointer;
@@ -158,7 +176,7 @@ main {
       span {
         right: 90px;
         transition-property: right;
-        transition-duration: 0.6s;
+        transition-duration: 0.6s ;
       }
       #itemHover {
         display: flex;
@@ -173,12 +191,17 @@ main {
         border: 1px solid $lightgreen;
         left: 3.5%;
         transition-property: width;
-        transition-duration: 0.6s;
-       // animation:  greenCheck 1s ease both;
+        
+        // animation:  greenCheck 1s ease both;
+        
+        }
+        
+       }
       }
+     
     }
-  }
-}
+  
+
 #entries {
   article:nth-of-type(1) {
     animation: slide-top 1s ease-out 0.2s both;
