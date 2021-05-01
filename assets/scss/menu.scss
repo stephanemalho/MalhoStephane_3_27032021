@@ -107,13 +107,15 @@ main {
     padding: 0 3%;
     position: relative;
     overflow: hidden;
-    
-    
+
     div {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       width: 86%;
+      transition-property: width;
+      transition-duration: 0.6s;
+      
       h4,
       p {
         text-overflow: ellipsis;
@@ -121,6 +123,9 @@ main {
         white-space: nowrap;
         width: 100%;
         padding: 1px 0;
+        transition-property: width;
+        transition-duration: 0.6s;
+        
       }
     }
     span {
@@ -128,7 +133,7 @@ main {
       right: 10px;
       bottom: 10px;
       transition-property: right;
-      transition-duration: 0.6s ;
+      transition-duration: 0.6s;
     }
     i {
       display: inline;
@@ -136,35 +141,35 @@ main {
       font-size: 1.5rem;
       color: white;
       right: -10%;
-      animation: iconReturn ease 0.6s; 
+      animation: iconReturn ease 0.6s;
     }
     #itemHover {
       width: 0px;
       transition-duration: 0.6s;
       display: flex;
-        margin-left: auto;
-        position: relative;
-        background-color: $lightgreen;
-        border-radius: 0 15px 15px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid $lightgreen;
-        left: 4%;
-        transition-property: width;
+      margin-left: auto;
+      position: relative;
+      background-color: $lightgreen;
+      border-radius: 0 15px 15px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $lightgreen;
+      left: 4%;
+      transition-property: width;
     }
     &:hover {
       cursor: pointer;
-       div {
-         width: 70%;
-         transition-property: width ;
-         transition-duration: 0.6s;
-          P {
+      div {
+        width: 70%;
+        transition-property: width;
+        transition-duration: 0.6s;
+        P {
           width: 85%;
-          transition-property: width ;
+          transition-property: width;
           transition-duration: 0.6s;
-         }
-       }
+        }
+      }
 
       i {
         display: inline;
@@ -176,7 +181,7 @@ main {
       span {
         right: 90px;
         transition-property: right;
-        transition-duration: 0.6s ;
+        transition-duration: 0.6s;
       }
       #itemHover {
         display: flex;
@@ -191,16 +196,12 @@ main {
         border: 1px solid $lightgreen;
         left: 3.5%;
         transition-property: width;
-        
+
         // animation:  greenCheck 1s ease both;
-        
-        }
-        
-       }
       }
-     
     }
-  
+  }
+}
 
 #entries {
   article:nth-of-type(1) {
