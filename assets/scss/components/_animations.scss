@@ -86,28 +86,53 @@
  * animation slide-top
  * ----------------------------------------
  */
- 
- @keyframes slide-top {
+
+@keyframes slide-top {
   0% {
-            transform: translateY(0);
-            opacity: 0;
-            
+    transform: translateY(0);
+    opacity: 0;
   }
-  25%{
-            transform: translateY(10px);
-            opacity: 0;
+  25% {
+    transform: translateY(10px);
+    opacity: 0;
   }
   50% {
-            transform: translateY(10px);
-            opacity:0;
+    transform: translateY(10px);
+    opacity: 0;
   }
   75% {
-            opacity: 0.5;
+    opacity: 0.5;
   }
   100% {
-            transform: translateY(0);
-            opacity:1;
-
-              
+    transform: translateY(0);
+    opacity: 1;
   }
 }
+
+@keyframes iconCheck {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes iconReturn {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+// @keyframes greenCheck {
+//   0% {
+//     transform: scaleX(0);
+//     transform-origin: 100% 0;
+//   }
+//   100% {
+//     transform: scaleX(100%);
+//     transform-origin: 100% 0;
+//   }
+// }
