@@ -32,7 +32,7 @@ main {
   position: relative;
   margin-top: -40px;
   h2 {
-    flex-basis: 100%;
+    flex-basis: 80%;
     font-size: 2rem;
     font-family: "Shrikhand";
     height: 95px;
@@ -48,7 +48,7 @@ main {
     cursor: pointer;
     position: absolute;
     right: 6%;
-    top: 3%;
+    top: 2.8%;
     &:hover {
       .heart-main path {
         animation: stroke-animation 2s ease-in forwards;
@@ -134,6 +134,7 @@ main {
     span {
       position: absolute;
       right: 10px;
+      bottom: 13px;
       bottom: 10px;
       transition-property: right;
       transition-duration: 0.6s;
