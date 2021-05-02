@@ -72,7 +72,6 @@
             stroke-width: 30;
             cursor: pointer;
             position: relative;
-            top: 5%;
             &:hover {
               .heart-main path {
                 animation: stroke-animation 2s ease-in forwards;
@@ -85,6 +84,9 @@
           svg {
             overflow: visible;
             width: 1.5rem;
+            position: absolute;
+            right: 5%;
+            
           }
           path {
             stroke-dashoffset: 0;
@@ -93,10 +95,11 @@
           }
           .heart-background {
             position: absolute;
-            left: 0;
             opacity: 0;
             z-index: 1;
             stroke: none;
+            right: 5%;
+            
           }
         }
       }
