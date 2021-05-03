@@ -1,24 +1,18 @@
-// @import "../home.scss";
-// @import "../menu.scss";
-
-#menu,
-#button {
-  a {
-    text-decoration: none;
-    background: $linearGrad;
-    color: $white;
-    box-shadow: 3px 6px 7px $shadow;
-    border-radius: 30px;
-    margin: 10px auto 60px;
-    width: 220px;
-    min-width: 200px;
-    height: 55px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    transition: all 700ms;
-  }
-  a:hover {
+.btn {
+  text-decoration: none;
+  background: $linearGrad;
+  color: $white;
+  box-shadow: 3px 6px 7px $shadow;
+  border-radius: 30px;
+  margin: 10px auto 60px;
+  width: 220px;
+  min-width: 200px;
+  height: 55px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: all 700ms;
+  &:hover {
     opacity: 0.8;
     box-shadow: 3px 6px 7px rgb(173, 168, 168);
     transition: all 1100ms;
