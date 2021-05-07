@@ -103,6 +103,7 @@
   p {
     font-size: 1.2rem;
     text-align: center;
+    padding: 0 10px;
   }
 }
 
@@ -225,6 +226,7 @@
     div {
       height: 100%;
       margin: 0;
+      padding: 0 2%;
       h3 {
         padding-top: 50px;
       }
@@ -243,6 +245,12 @@
     div {
       margin: auto;
       max-width: 1200px;
+      padding: 0 2%;
+    }
+  }
+  footer {
+    > div {
+      padding: 0 2%;
     }
   }
 }
