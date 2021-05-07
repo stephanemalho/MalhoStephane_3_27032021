@@ -88,6 +88,7 @@
             position: absolute;
             right: 5%;
             
+            
             .colorTop{
               stop-color:$pink;
             }
@@ -103,6 +104,8 @@
             stroke-dashoffset: 0;
             stroke-dasharray: 1550;
             transform-origin: center;
+            width: 24px;
+            height: 24px;
           }
           .heart-background {
             position: absolute;
@@ -110,6 +113,7 @@
             z-index: 1;
             stroke: none;
             right: 5%;
+            width: 1.5rem;
           }
         }
       }
