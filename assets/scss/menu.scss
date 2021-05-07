@@ -61,6 +61,16 @@ main {
   svg {
     overflow: visible;
     width: 1.5rem;
+    .style1{
+      stop-color:$pink;
+    }
+    
+    .style2{
+      stop-color:$purple;
+    }
+    .style3{
+      stop-color:$darkpurple;
+    }
   }
   path {
     stroke-dashoffset: 0;

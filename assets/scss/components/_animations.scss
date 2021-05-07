@@ -37,20 +37,18 @@
     stroke-dashoffset: 3100;
     fill: transparent;
     transform: scale(1);
-    stroke: $pink;
+    stroke: $purple;
   }
   80% {
     transform: scale(1.1);
-    fill: transparent;
   }
   90% {
     transform: scale(1);
-    fill: transparent;
   }
   100% {
     stroke-dashoffset: 3100;
-    stroke: $pink;
-    fill: $pink;
+    stroke: none;
+    opacity: 1;
   }
 }
 
@@ -70,7 +68,7 @@
   }
   100% {
     transform: scale(1);
-    opacity: 1;
+    opacity: 1; 
   }
 }
 

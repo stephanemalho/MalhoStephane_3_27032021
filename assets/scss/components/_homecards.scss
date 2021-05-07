@@ -79,28 +79,40 @@
             }
             .heart-background {
               animation: fade-animation 2s ease forwards;
+              }
             }
           }
-        }
-        svg {
-          overflow: visible;
-          width: 1.5rem;
-          position: absolute;
-          right: 5%;
-        }
-        path {
-          stroke-dashoffset: 0;
-          stroke-dasharray: 1550;
-          transform-origin: center;
-        }
-        .heart-background {
-          position: absolute;
-          opacity: 0;
-          z-index: 1;
-          stroke: none;
-          right: 5%;
+          svg {
+            overflow: visible;
+            width: 1.5rem;
+            position: absolute;
+            right: 5%;
+            
+            .style1{
+              stop-color:$pink;
+            }
+            
+            .style2{
+              stop-color:$purple;
+            }
+            .style3{
+              stop-color:$darkpurple;
+            }
+          }
+          path {
+            stroke-dashoffset: 0;
+            stroke-dasharray: 1550;
+            transform-origin: center;
+          }
+          .heart-background {
+            position: absolute;
+            opacity: 0;
+            z-index: 1;
+            stroke: none;
+            right: 5%;
+          }
         }
       }
     }
   }
-}
+
