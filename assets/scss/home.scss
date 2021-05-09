@@ -62,7 +62,7 @@
     width: 100%;
     text-align: center;
     font-family: "Roboto", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     height: 50px;
     justify-content: center;
     align-items: center;
@@ -92,17 +92,18 @@
   align-items: center;
   padding-top: 45px;
   background-color: $lightgrey;
-  height: 290px;
+  height: 300px;
   justify-content: space-between;
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
     max-width: 70%;
     text-align: center;
   }
   p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
+    padding: 0 10px;
   }
 }
 
@@ -117,7 +118,7 @@
     font-weight: bold;
   }
   ol {
-    height: 300px;
+    height: 330px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -140,7 +141,7 @@
     }
     li {
       width: 100%;
-      height: 75px;
+      height: 80px;
       margin-top: 10px;
       display: flex;
       background-color: $lightgrey;
@@ -169,112 +170,6 @@
         i {
           color: $darkpurple;
           transition-duration: 500ms;
-        }
-      }
-    }
-  }
-}
-
-#restaurants {
-  background-color: $lightgrey;
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    h3 {
-      font-size: 1.5rem;
-      font-weight: bold;
-      padding: 50px 0 20px 0;
-    }
-    article {
-      display: flex;
-      flex-direction: column;
-      margin: 10px 0;
-
-      box-shadow: 0 3px 5px $shadow;
-      border-radius: 15px;
-      figure {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        a {
-          position: relative;
-          span {
-            position: absolute;
-            right: 5%;
-            display: flex;
-            align-items: center;
-            background-color: $lightgreen;
-            color: $darkgreen;
-            font-weight: bold;
-            height: 30px;
-            font-size: 0.9rem;
-            padding: 0 10px;
-            margin-top: 15px;
-          }
-
-          img {
-            border-radius: 15px 15px 0 0;
-            height: 175px;
-            object-fit: cover;
-            object-position: 50% 65%;
-          }
-        }
-      }
-      img {
-        width: 100%;
-      }
-      figcaption {
-        position: relative;
-        display: flex;
-        height: 100%;
-        a {
-          text-decoration: none;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          flex-wrap: wrap;
-          padding-left: 15px;
-          flex-basis: 90%;
-        }
-        h4 {
-          color: $text;
-          font-weight: bold;
-          font-size: 1.1rem;
-        }
-        p {
-          color: $text;
-        }
-        .icon {
-          fill: transparent;
-          stroke: $darkgrey;
-          stroke-width: 30;
-          cursor: pointer;
-          position: relative;
-          &:hover {
-            .heart-main path {
-              animation: stroke-animation 2s ease-in forwards;
-            }
-            .heart-background {
-              animation: fade-animation 2s ease forwards;
-            }
-          }
-        }
-        svg {
-          overflow: visible;
-          width: 1.5rem;
-        }
-        path {
-          stroke-dashoffset: 0;
-          stroke-dasharray: 1550;
-          transform-origin: center;
-        }
-        .heart-background {
-          position: absolute;
-          left: 0;
-          opacity: 0;
-          z-index: 1;
-          stroke: none;
         }
       }
     }
@@ -331,6 +226,7 @@
     div {
       height: 100%;
       margin: 0;
+      padding: 0 2%;
       h3 {
         padding-top: 50px;
       }
@@ -349,9 +245,12 @@
     div {
       margin: auto;
       max-width: 1200px;
+      padding: 0 2%;
     }
-    article {
-      height: 250px;
+  }
+  footer {
+    > div {
+      padding: 0 2%;
     }
   }
 }

@@ -1,60 +1,57 @@
 footer {
-    background-color: $darkgrey;
-   
-    > div {
-      margin-left: 5%;
-      nav {
-         
-          display: flex;
-          flex-direction: column;
-          padding: 20px 0;
-            h5 {
-                padding: 20px 0;
-              a {
-              font-family: 'Shrikhand';
-              font-size: 1.1rem;
-              text-decoration: none;
-              color: $white;
-              
-              }
-            }
-          div {
-            li{
-                padding: 5px 0;
-             a {
-                 color: white;
-                 text-decoration: none;
-                 font-family:'Roboto';
-                 i {
-                     margin-right: 20px;
-                     width: 10px;
-                 }
-             }
+  background-color: $darkgrey;
+
+  > div {
+    margin-left: 5%;
+    nav {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0;
+      h5 {
+        padding: 20px 0;
+        a {
+          font-family: "Shrikhand";
+          font-size: 1.1rem;
+          text-decoration: none;
+          color: $white;
+        }
+      }
+      div {
+        li {
+          padding: 5px 0;
+          a {
+            color: white;
+            text-decoration: none;
+            font-family: "Roboto";
+            i {
+              margin-right: 20px;
+              width: 10px;
             }
           }
+        }
       }
     }
+  }
 }
 
 @media only screen and (min-width: 900px) {
-   footer {
+  footer {
     > div {
-     nav {
-       padding: 20px 0 ;
-     }
+      nav {
+        padding: 20px 0;
+      }
     }
-   }
+  }
 }
 @media only screen and (min-width: 1200px) {
-  
   footer {
-    background-color:$darkgrey;
+    background-color: $darkgrey;
     > div {
       max-width: 1200px;
       margin: 0 auto;
       nav {
-      margin-left: 0;
-     }
-   }
- }
+        margin-left: 0;
+      }
+    }
+  }
 }
