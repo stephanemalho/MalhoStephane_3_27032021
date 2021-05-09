@@ -61,15 +61,15 @@ main {
   svg {
     overflow: visible;
     width: 1.5rem;
-    .colorTop{
-      stop-color:$pink;
+    .colorTop {
+      stop-color: $pink;
     }
-    
-    .colorMiddle{
-      stop-color:$purple;
+
+    .colorMiddle {
+      stop-color: $purple;
     }
-    .colorBottom{
-      stop-color:$darkpurple;
+    .colorBottom {
+      stop-color: $darkpurple;
     }
   }
   path {
@@ -209,13 +209,13 @@ main {
 }
 
 #entries {
-  @include lazy(4,0);
+  @include lazy(4, 0);
 }
 #main-courses {
-  @include lazy(3,0.6);
+  @include lazy(3, 0.6);
 }
 #desserts {
-  @include lazy(3,1.2);
+  @include lazy(3, 1.2);
 }
 
 @media only screen and (min-width: 481px) {

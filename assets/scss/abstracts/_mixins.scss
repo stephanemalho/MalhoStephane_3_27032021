@@ -1,8 +1,8 @@
-@mixin lazy($limit,$delay) {
-    @for $i from 1 through $limit {
-        article:nth-of-type(#{$i}) {
-          animation: slide-top 1s ease-out ($delay + (0.2s * $i)) both;
-        }
-      }
+@mixin lazy($limit, $delay) {
+  @for $i from 1 through $limit {
+    article:nth-of-type(#{$i}) {
+      animation: slide-top 1s ease-out ($delay + (0.2s * $i)) both;
+    }
+  }
 }
 // ANIMATION DELAY FOR LAZY LOADING //

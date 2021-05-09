@@ -7,12 +7,6 @@
   }
 }
 
-@keyframes hidden {
-  to {
-    visibility: hidden;
-  }
-}
-
 @keyframes loader {
   0% {
     opacity: 1;
@@ -65,23 +59,15 @@
     transform: scale(0.5);
     opacity: 0.5;
   }
-  90% {
-    opacity: 1;
-    transform: scale(1);
-  }
   100% {
     transform: scale(1);
-    opacity: 1; 
+    opacity: 1;
   }
 }
 
 @keyframes slide-top {
   0% {
     transform: translateY(0);
-    opacity: 0;
-  }
-  25% {
-    transform: translateY(10px);
     opacity: 0;
   }
   50% {

@@ -79,44 +79,42 @@
             }
             .heart-background {
               animation: fade-animation 2s ease forwards;
-              }
             }
           }
-          svg {
-            overflow: visible;
-            width: 1.5rem;
-            position: absolute;
-            right: 5%;
-            
-            
-            .colorTop{
-              stop-color:$pink;
-            }
-            
-            .colorMiddle{
-              stop-color:$purple;
-            }
-            .colorBottom{
-              stop-color:$darkpurple;
-            }
+        }
+        svg {
+          overflow: visible;
+          width: 1.5rem;
+          position: absolute;
+          right: 5%;
+
+          .colorTop {
+            stop-color: $pink;
           }
-          path {
-            stroke-dashoffset: 0;
-            stroke-dasharray: 1550;
-            transform-origin: center;
-            width: 24px;
-            height: 24px;
+
+          .colorMiddle {
+            stop-color: $purple;
           }
-          .heart-background {
-            position: absolute;
-            opacity: 0;
-            z-index: 1;
-            stroke: none;
-            right: 5%;
-            width: 1.5rem;
+          .colorBottom {
+            stop-color: $darkpurple;
           }
+        }
+        path {
+          stroke-dashoffset: 0;
+          stroke-dasharray: 1550;
+          transform-origin: center;
+          width: 24px;
+          height: 24px;
+        }
+        .heart-background {
+          position: absolute;
+          opacity: 0;
+          z-index: 1;
+          stroke: none;
+          right: 5%;
+          width: 1.5rem;
         }
       }
     }
   }
-
+}
