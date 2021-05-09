@@ -10,7 +10,7 @@ Développer un site proposant le menu de 4 grands restaurants Parisiens.
 * Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML.
 
 ## Captures d'écran
- [Capture d'écran] (./assets/images/screen/menu.png)
+ ![ma page menu] (./assets/images/screen/menu.png)
 
 ## Les prérequis 
 * apprendre à utiliser SASS 
