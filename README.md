@@ -1,73 +1,93 @@
 > MalhoStephane_3_27032021
- # Ohmyfood 
-> Ceci est mon deuxième projet de cours Openclassrooms.
-> Le projet porte en particulier sur l'utilisation se SASS et sur les animations CSS3.
+# Ohmyfood
+> This is my second Openclassrooms course project.
+> The project focuses in particular on the use of SASS and on CSS3 animations.
 
-## Informations générales
-Développer un site proposant le menu de 4 grands restaurants Parisiens.
-* Le développement devra se faire en CSS, sans JavaScript.
-* Aucun framework ne devra être utilisé, en revanche l’utilisation de SASS est conseillée.
-* Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML.
+## REQUIREMENTS
 
-## Captures d'écran
- ![ma page menu] (./assets/images/screen/menu.png)
+Install Node.js v14.15.4. (or latest version)
 
-## Les prérequis 
-* apprendre à utiliser SASS 
-* apprendre les animations en CSS3
+## INSTALLATION
 
-## Les technologies
+Clone the repository https://github.com/stephanemalho/MalhoStephane_3_27032021
+
+Open your local folder in your code editor then, in a new terminal, run npm install
+
+## USE
+
+This project has 2 mode:
+
+npm run serve
+```
+ -> For development mode. Once you run it, allows you to code in sass and see it in real time in your browser.
+ ```
+
+npm run start
+```
+ -> For production mode. Compile your sass into a minified css.
+ ```
+ 
+
+## General informations
+Develop a site offering the menu of 4 major Parisian restaurants.
+* The development must be done in CSS, without JavaScript.
+* No framework should be used, however the use of SASS is recommended.
+* No CSS code should be applied via a style attribute in an HTML tag.
+
+## Screenshot
+ ! [my menu page] (./assets/images/screen/menu.png)
+
+## Prerequisites
+* learn how to use SASS
+* learn CSS3 animations
+
+## Technologies
 * HTML5
 * CSS3
-* SASS au format SCSS
-* NPM 
+* SASS in SCSS format
+* NPM
 
-## Exemples de code
-```css
+## Code examples
+``` css
 #entries {
-  @include lazy(4,0);
+  @include lazy (4.0);
 }
-#main-courses {
-  @include lazy(3,0.6);
+# main-courses {
+  @include lazy (3.0.6);
 }
 #desserts {
-  @include lazy(3,1.2);
+  @include lazy (3,1.2);
 }
 ```
-```css
-@mixin lazy($limit,$delay) {
-    @for $i from 1 through $limit {
-        article:nth-of-type(#{$i}) {
-          animation: slide-top 1s ease-out ($delay + (0.2s * $i)) both;
+``` css
+@mixin lazy ($ limit, $ delay) {
+    @for $ i from 1 through $ limit {
+        article: nth-of-type (# {$ i}) {
+          animation: slide-top 1s ease-out ($ delay + (0.2s * $ i)) both;
         }
       }
 }
 // ANIMATION DELAY FOR LAZY LOADING //
 ```
 
-## Caractéristiques
+## Characteristics
 
-Ce site est un prototype crée à partir d'une maquette mobile, le format tablette et desktop à été adapté par le développeur.(moi ^^)
+This site is a prototype created from a mobile model, the tablet and desktop format has been adapted by the developer. (Me ^^)
 
-### Fonctionnalité 
-* une page principale et quatres pages pour les menus de restaurants
-* structure du site mobile first 
-* format responsive 
-* animation au hover sur les articles de menu avec check icon (au hover)
-* loading spinner sur la page principale
-* les boutons changent d'apparansse au survol
+### Functionality
+* a main page and four pages for restaurant menus
+* structure of the mobile first site
+* responsive format
+* hover animation on menu items with check icon (hover)
+* loading spinner on the main page
+* the buttons change appearance on hover
 
 
-## Statut
-Le projet est: terminée 
-Bien qu'il ne soit pas fonctionnel, les livrables ont été respectés, 
+## Status
+The project is: finished
+Although it is not functional, the deliverables have been respected,
 
 ## Inspiration
-Projet inspiré de cours https://openclassrooms.com
-source supplémentaire https://developer.mozilla.org/
-validé https://validator.w3.org/
-
-
-
-
-
+Course inspired project https://openclassrooms.com
+additional source https://developer.mozilla.org/
+validated https://validator.w3.org/
