@@ -5,7 +5,7 @@
 
 ## REQUIREMENTS
 
-Install Node.js v14.15.4. (or latest version)
+Install Node.js v14.16.0 (or latest version)
 
 ## INSTALLATION
 
@@ -15,6 +15,8 @@ Open your local folder in your code editor then, in a new terminal, run npm inst
 
 ## USE
 
+-> For development mode. CSS is not minify and command watch for any change on scss files
+-> For production mode. CSS is minified.
 This project has 2 mode:
 
 npm run serve
