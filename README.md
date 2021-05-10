@@ -15,7 +15,7 @@ Open your local folder in your code editor then, in a new terminal, run npm inst
 
 ## USE
 
-This project has 2 mode:
+This project has 2 commands:
 
 npm run serve
 ```
