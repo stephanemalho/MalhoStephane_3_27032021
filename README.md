@@ -15,18 +15,16 @@ Open your local folder in your code editor then, in a new terminal, run npm inst
 
 ## USE
 
--> For development mode. CSS is not minify and command watch for any change on scss files
--> For production mode. CSS is minified.
 This project has 2 mode:
 
 npm run serve
 ```
- -> For development mode. Once you run it, allows you to code in sass and see it in real time in your browser.
+ -> For development mode. CSS is not minify and command watch for any change on scss files
  ```
 
 npm run start
 ```
- -> For production mode. Compile your sass into a minified css.
+ -> For production mode. CSS is minified.
  ```
  
 
